@@ -1,0 +1,50 @@
+*,::before,::after{
+	margin: 0;
+	padding: 0;
+
+	font-size:14px;
+	font-family: "Microsoft Yahei",sans-serif;
+
+	-webkit-tap-highlight-color:transparent;
+
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+
+}
+input{
+	border:0;
+	-webkit-appearance:none;
+}
+a{
+	text-decoration: none;
+}
+ol,ul{
+	list-style: none;
+}
+
+.clearfix::before,
+.clearfix::after{
+	content:'';
+	display: block;
+	height: 0px;
+	visibility: hidden;
+	clear: both;
+}
+.f_l{
+	float: left;
+}
+.f_r{
+	float:right;
+}
+.b_t{
+	border-top:1px solid #eee;
+}
+.b_r{
+	border-right:1px solid #eee;
+}
+.b_b{
+	border-bottom:1px solid #eee;
+}
+.b_l{
+	border-left:1px solid #eee;
+}

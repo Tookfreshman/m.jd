@@ -1,0 +1,253 @@
+/*最外层的容器*/
+.jd_container{
+	width: 100%;
+/*	height:1500px;*/
+	background-color: rgb(235,235,235);
+}
+/*顶部的通栏*/
+.jd_header{
+	height: 40px;
+	width: 100%;
+	background-color: rgba(201,21,35,0);
+	position: fixed;
+	z-index: 99;
+	padding-left:70px;
+	padding-right:60px;
+}
+.jd_header .header_logo{
+	width: 60px;
+	height: 36px;
+	position: absolute;
+	left:5px;
+	top:2px;
+	background-image: url("../images/sprites.png");
+	background-position: 0 -103px;
+	background-repeat: no-repeat;
+	background-size: 200px 200px;
+}
+.jd_header .header_glass{
+	width: 20px;
+	height: 20px;
+	position: absolute; 
+	background-image:url("../images/sprites.png");
+	background-repeat: no-repeat;
+	background-size: 200px 200px;
+	background-position: -60px -109px;
+	top:10px;
+	left:80px;
+}
+.jd_header .header_search{
+	width: 100%;
+	height: 30px;
+	margin-top:5px;
+	border-radius: 15px;
+	padding-left:35px;
+	color:#ccc;
+	font-size: 15px;
+}
+.jd_header .header_login{
+	position: absolute;
+	right: 10px;
+	line-height: 40px;
+	top:0;
+	color:white;
+	font-size:17px;
+}
+.jd_banner{
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+.jd_banner .banner_images{
+	/*要放十张图片，宽度为父盒子的十倍*/
+	width: 1000%;
+	transform: translateX(-10%);
+}
+.jd_banner .banner_images li{
+	width: 10%;
+	float:left;
+}
+.jd_banner .banner_images li a{
+	display: block;
+	width: 100%;
+}
+.jd_banner .banner_images li a img{
+	display: block;
+	width: 100%;
+}
+/*轮播图里的索引标签*/
+.jd_banner .banner_index{
+	position: absolute;
+	bottom: 5px;
+	left: 50%;
+	margin-left:-48px;
+}
+.jd_banner .banner_index li{
+	float: left;
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	border: 1px solid #fff;
+	margin-left: 6px;
+}
+.jd_banner .banner_index li.current{
+	background-color: white;
+}
+.jd_nav{
+	width: 100%;
+	padding-top:10px;
+	border-bottom: 1px solid #eee; 
+	background-color: white;
+}
+.jd_nav ul{
+	width: 100%;
+}
+.jd_nav ul li{
+	float: left;
+	width: 25%;
+}
+.jd_nav ul li a{
+	width: 100%;
+	display: block;
+}
+.jd_nav ul li a img{
+	width: 75%;
+	display: block;
+	margin:0 auto;
+}
+.jd_nav ul li a p{
+	text-align: center;
+	color:#ccc;
+	padding:5px 0;
+}
+/*京东首页主要内容样式*/
+.jd_main{
+	width: 100%;
+	padding:0 5px;
+	margin-top: 10px;
+}
+.jd_main .main_content{
+	width: 100%;
+	background-color: #fff;
+	min-height:150px;
+	margin-bottom: 5px;
+	box-shadow:0 0 2px gray;
+}
+.jd_main .main_content .content_top{
+	width: 100%;
+	height: 32px;
+	border-bottom: 1px solid #ccc;
+}
+.jd_main .main_content .content_bottom{
+	width:100%;
+}
+.jd_main .main_content:nth-child(1) .content_top{
+	border-bottom: none;
+}
+.jd_main .main_content:nth-child(1) .content_top span{
+	width:20px;
+	height: 25px;
+	float: left;
+	margin-top: 3.5px;
+	margin-left:5px;
+	background-image: url("../images/seckill-icon.png");
+	background-size: 20px 25px;
+}
+.jd_main .main_content:nth-child(1) .content_top p{
+	color:rgb(201,21,35);
+	margin-left:5px;
+	float: left;
+	line-height: 32px;
+}
+.jd_main .main_content:nth-child(1) .content_top ul{
+	height: 32px;
+	float: left;
+}
+.jd_main .main_content:nth-child(1) .content_top li{
+	float: left;
+	background-color: black;
+	width: 15px;
+	height: 15px;
+	color:white;
+	margin-top: 8.5px;
+	margin-left: 3px;
+	text-align: center;
+	line-height: 15px;
+}
+.jd_main .main_content:nth-child(1) .content_top li:nth-child(3n){
+	background-color: white;
+	color:black;
+	width:8px;
+}
+.jd_main .main_content:nth-child(1) .content_top a{
+	float: right;
+	color:gray;
+	line-height: 32px;
+}
+.jd_main .main_content:nth-child(1) .content_bottom{
+	width:100%;
+}
+.jd_main .main_content:nth-child(1) .content_bottom ul{
+	width: 100%;
+}
+.jd_main .main_content:nth-child(1) .content_bottom ul li{
+	width: 33.33333%;
+	float: left;
+}
+.jd_main .main_content:nth-child(1) .content_bottom ul li a{
+	display: block;
+	width: 100%;
+}
+.jd_main .main_content:nth-child(1) .content_bottom ul li:nth-child(2) a{
+	border-left: 1px solid gray;
+	border-right: 1px solid gray;
+}
+.jd_main .main_content:nth-child(1) .content_bottom ul li a img{
+	display: block;
+	width: 60%;
+	margin:0 auto;
+}
+.jd_main .main_content:nth-child(1) .content_bottom ul li p{
+	width: 100%;
+	text-align: center;
+	font-size: 12px;
+	margin:3px auto;
+}
+.jd_main .main_content:nth-child(1) .content_bottom ul li p:nth-child(2){
+	color:rgb(201,21,35);
+}
+.jd_main .main_content:nth-child(1) .content_bottom ul li p:nth-child(3){
+	text-decoration: line-through;
+}
+/*出去第一个主要内容盒子*/
+.jd_main .main_content:nth-child(n+2) .content_top{
+	color:rgb(201,21,35);
+	line-height: 32px;
+	padding-left:15px;
+	position: relative;
+}
+.jd_main .main_content:nth-child(n+2) .content_top::before{
+	content:"";
+	display: block;
+	height:15px;
+	width: 5px;
+	position: absolute;
+	top: 9.5px;
+	left:5px;
+	background-color: rgb(201,21,35);
+}
+.jd_main .main_content:nth-child(n+2) .content_bottom{}
+.jd_main .main_content:nth-child(n+2) .content_bottom ul{
+	width: 100%;
+}
+.jd_main .main_content:nth-child(n+2) .content_bottom ul li{
+	width: 50%;
+}
+.jd_main .main_content:nth-child(n+2) .content_bottom ul li a{
+	width: 100%;
+	display: block;
+}
+.jd_main .main_content:nth-child(n+2) .content_bottom ul li a img{
+	width: 100%;
+	display: block;
+}
