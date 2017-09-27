@@ -5,10 +5,9 @@ window.onload = function(){
 	lastTime();
 	//轮播图
 	banner();
-
 };
-
 function hearder(){
+	var openApp = document.querySelector(".jd_openApp");
 	var jd_header = document.querySelector(".jd_header");
 	var jd_nav = document.querySelector(".jd_nav");
 	var maxDistance = jd_nav.offsetTop + jd_nav.offsetHeight;
@@ -18,8 +17,9 @@ function hearder(){
 
 		 var percentage = scrollHeight / maxDistance;
 		 percentage = percentage > 1 ? 1 :percentage;
-		 console.log(percentage);
 		 jd_header.style.backgroundColor = "rgba(201,21,35,"+percentage+")";
+		 //隐藏立即打开栏
+		 openApp.style.display = "none";
 	};
 }
 
